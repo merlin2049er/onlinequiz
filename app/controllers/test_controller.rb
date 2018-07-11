@@ -3,9 +3,12 @@ class TestController < ApplicationController
     @totalcategories = Category.count
     @totalquestions = Question.count
 
-    if Question.count > 10
+    if Question.count < 11
 
-      Array.new(10) { rand(1...Question.count) }
+      @msg = 'not enough questions in the database...'
+    else
+      @msg = 'Choosing 10 random questions...'
+        #Array.new(10) { rand(1...Question.count) }
 
     end
 

@@ -1,7 +1,9 @@
-<h1>Test#index</h1>
-<p>Find me in app/views/test/index.html.erb</p>
+<h1>Test your knowledge...</h1>
 <%= @totalcategories %> categories and <%= @totalquestions %> questions in the database.<br/>
-<br/>
-Choosing 10 random questions...<br/>
+
+<%= @msg %><br/><br/>
 
 <!-  random questions here -->
+
+<%= link_to "Back" , welcome_index_path %>
+
