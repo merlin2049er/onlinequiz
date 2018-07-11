@@ -1,7 +1,5 @@
 class Question < ApplicationRecord
 
-  belongs_to :category
-
   validates :question, presence: true
   validates :choice1, presence: true
   validates :choice2, presence: true
