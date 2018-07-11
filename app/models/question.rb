@@ -1,5 +1,6 @@
 class Question < ApplicationRecord
 
+
   belongs_to :category
 
   validates :question, presence: true
