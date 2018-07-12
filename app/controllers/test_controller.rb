@@ -5,7 +5,7 @@ class TestController < ApplicationController
     @totalcategories = Category.count
     @totalquestions = Question.count
 
-    if Question.count < 11
+    if Question.count < 1
 
       @msg = 'not enough questions in the database...'
     else
