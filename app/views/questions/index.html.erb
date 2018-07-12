@@ -6,6 +6,7 @@
   <thead>
     <tr>
       <th>Question</th>
+      <th>Category</th>
       <th>Choice1</th>
       <th>Choice2</th>
       <th>Choice3</th>
@@ -20,6 +21,7 @@
   <tbody>
     <% @questions.each do |question| %>
       <tr>
+        <td><%= question.category %></td>
         <td><%= question.question %></td>
         <td><%= question.choice1 %></td>x`
         <td><%= question.choice2 %></td>
