@@ -6,7 +6,6 @@
   <thead>
     <tr>
       <th>Question</th>
-      <th>Category</th>
       <th>Choice1</th>
       <th>Choice2</th>
       <th>Choice3</th>
@@ -21,7 +20,6 @@
   <tbody>
     <% @questions.each do |question| %>
       <tr>
-        <td><%= question.category %></td>
         <td><%= question.question %></td>
         <td><%= question.choice1 %></td>x`
         <td><%= question.choice2 %></td>
@@ -42,4 +40,4 @@
 <br>
 
 <%= link_to 'New Question', new_question_path %><br/>
-<%= link_to "Back" , welcome_index_path %>
+<%= link_to "Back" , welcome_index_path %> 
