@@ -4,6 +4,15 @@
 <%= @msg %><br/><br/>
 
 <!-  random questions here -->
+<h3>Question</h3>
+<i><%= @questions.question %></i><br><br>
+<b>1.</b><%= @questions.choice1 %><br>
+<b>1.</b><%= @questions.choice2 %><br>
+<b>1.</b><%= @questions.choice3 %><br>
+<b>1.</b><%= @questions.choice4 %><br><br>
+
+<%= @questions.answer %><br>
+<%= @questions.explanation %><br>
 
 <%= link_to "Back" , welcome_index_path %>
 
