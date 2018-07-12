@@ -4,13 +4,19 @@ class TestController < ApplicationController
   def index
     @totalcategories = Category.count
     @totalquestions = Question.count
+    @questions = Question.limit(RANDOM_LIMIT).order("RANDOM()")
+    #@questions = Question.all
+
+
 
     if Question.count < 1
 
       @msg = 'not enough questions in the database...'
     else
       @msg = 'Choosing 10 random questions...'
-      @questions = Question.random(RANDOM_LIMIT)
+
+
+
     end
 
   end

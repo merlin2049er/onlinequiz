@@ -12,8 +12,14 @@
     <b>2.</b> <%= question.choice2 %><br>
     <b>3.</b> <%= question.choice3 %><br>
    <b>4.</b> <%= question.choice4 %><br><br>
-    <%= question.answer %><br>
-    <%= question.explanation %><br>
+
+  <button class="accordion">Answer...</button>
+  <div class="panel">
+    <p>    <%= question.answer %>)     <%= question.explanation %>
+
+    </p>
+  </div>
+
 
     <%= question.report %>
 
