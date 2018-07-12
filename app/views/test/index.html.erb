@@ -4,15 +4,24 @@
 <%= @msg %><br/><br/>
 
 <!-  random questions here -->
-<h3>Question</h3>
-<i><%= @questions.question %></i><br><br>
-<b>1.</b><%= @questions.choice1 %><br>
-<b>1.</b><%= @questions.choice2 %><br>
-<b>1.</b><%= @questions.choice3 %><br>
-<b>1.</b><%= @questions.choice4 %><br><br>
 
-<%= @questions.answer %><br>
-<%= @questions.explanation %><br>
+<table>
+<tbody>
+<% @questions.each do |question| %>
+  <tr>
+    <td><%= question.question %></td>
+    <td><%= question.choice1 %></td>
+    <td><%= question.choice2 %></td>
+    <td><%= question.choice3 %></td>
+    <td><%= question.choice4 %></td>
+    <td><%= question.answer %></td>
+    <td><%= question.explanation %></td>
+
+    <td><%= question.report %></td>
+    
+  </tr>
+<% end %>
+</tbody></table>
 
 <%= link_to "Back" , welcome_index_path %>
 
